@@ -1,0 +1,136 @@
+<div class="main-container">
+    <div class="inner-container">
+      <form (ngSubmit)="employeeregistration()">
+        <div class="form-group">
+          <h5 for="id" style="margin-bottom: 6px">Employee Id:</h5>
+  
+          <input
+            type="number"
+            class="form-control"
+            id="id"
+            placeholder="Enter id"
+            name="id"
+            [(ngModel)]="employee.employeeId"
+            required
+            pattern="^[0-9]+$"
+            #id="ngModel"
+            [class.is-invalid]="id.invalid && id.touched"
+          />
+          <div *ngIf="id.errors && id.invalid && id.touched">
+            <p class="text-danger" *ngIf="id.errors?.['required']">
+              Id is a required field
+            </p>
+            <p class="text-danger" *ngIf="id.errors?.['pattern']">
+              Enter the valid Id
+            </p>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <h5 for="name" style="margin-bottom: 6px">Employee Name:</h5>
+  
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter name"
+            name="name"
+            [(ngModel)]="employee.employeeName"
+            required
+            pattern="^[a-zA-Z]+ [a-zA-Z]+$"
+            #name="ngModel"
+            [class.is-invalid]="name.invalid && name.touched"
+          />
+          <div *ngIf="name.errors && name.invalid && name.touched">
+            <p class="text-danger" *ngIf="name.errors?.['required']">
+              Name is a required field
+            </p>
+            <p class="text-danger" *ngIf="name.errors?.['pattern']">
+              Enter the valid name
+            </p>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <h5 for="salary" style="margin-bottom: 6px">Employee Salary:</h5>
+  
+          <input
+            type="number"
+            class="form-control"
+            id="salary"
+            placeholder="Enter id"
+            name="salary"
+            [(ngModel)]="employee.employeeSalary"
+            required
+            pattern="^[0-9]+$"
+            #salary="ngModel"
+            [class.is-invalid]="salary.invalid && salary.touched"
+          />
+          <div *ngIf="salary.errors && salary.invalid && salary.touched">
+            <p class="text-danger" *ngIf="salary.errors?.['required']">
+              Salary is a required field
+            </p>
+            <p class="text-danger" *ngIf="salary.errors?.['pattern']">
+              Enter the valid salary
+            </p>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <h5 for="email" style="margin-bottom: 6px">Employee Email:</h5>
+  
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+            name="email"
+            [(ngModel)]="employee.employeeEmail"
+            required
+            pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+            #email="ngModel"
+            [class.is-invalid]="email.invalid && email.touched"
+          />
+          <div *ngIf="email.errors && email.invalid && email.touched">
+            <p class="text-danger" *ngIf="email.errors?.['required']">
+              Email Id is a required field
+            </p>
+            <p class="text-danger" *ngIf="email.errors?.['pattern']">
+              Enter the valid Email Id
+            </p>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <h5 for="contact" style="margin-bottom: 6px">Employee Phone:</h5>
+  
+          <input
+            type="number"
+            class="form-control"
+            id="contact"
+            placeholder="Enter contact number"
+            name="contact"
+            [(ngModel)]="employee.employeeContactNo"
+            required
+            pattern="^[6-9]{1}[0-9]{9}$"
+            #contact="ngModel"
+            [class.is-invalid]="contact.invalid && contact.touched"
+          />
+          <div *ngIf="contact.errors && contact.invalid && contact.touched">
+            <p class="text-danger" *ngIf="contact.errors?.['required']">
+              Contact a required field
+            </p>
+            <p class="text-danger" *ngIf="contact.errors?.['pattern']">
+              Enter the valid contact
+            </p>
+          </div>
+        </div>
+        <div class="btn">
+          <button type="submit" class="buttons">Register</button>
+          <button type="reset" class="buttons">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <h6 class="text-success">{{ message }}</h6>
+  

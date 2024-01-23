@@ -1,0 +1,25 @@
+<div class="container">
+    <table class="table table-bordered">
+      <thead class="table-light">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Salary</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+  
+      <tbody>
+        <tr *ngFor="let employee of employeeDetails">
+          <td>{{ employee.employeeId }}</td>
+          <td>{{ employee.employeeName }}</td>
+          <td>{{ employee.employeeSalary }}</td>
+          <td>{{ employee.employeeEmail }}</td>
+          <td>{{ employee.employeeContactNo }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <router-outlet></router-outlet>
+  </div>
+  
