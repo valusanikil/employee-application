@@ -1,0 +1,14 @@
+.main-container {
+    background-color: #efede1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .inner-container1 h1 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-right: 25px;
+  }
+  

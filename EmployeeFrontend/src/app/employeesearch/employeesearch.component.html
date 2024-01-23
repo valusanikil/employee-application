@@ -1,0 +1,25 @@
+<h3 class="text text-center">Get User</h3>
+
+<div class="container" class="col-md-5 offset-md-3" id="div">
+  <form #form="ngForm" (ngSubmit)="onSubmit(this.employee.employeeId)">
+    <div class="form-group" id="search">
+      <label>Employee Id:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="id"
+        [(ngModel)]="employee.employeeId"
+        name="id"
+      />
+      <button class="btn btn-success">Search</button>
+    </div>
+  </form>
+
+  <h4>Employee Id: {{ employee.employeeId }}</h4>
+  <h4>Employee Name: {{ employee.employeeName }}</h4>
+  <h4>Employee Salary: {{ employee.employeeSalary }}</h4>
+  <h4>Employee Email: {{ employee.employeeEmail }}</h4>
+  <h4>Employee Phone: {{ employee.employeeContactNo }}</h4>
+  <br />
+  <h6 class="text-danger">{{ message }}</h6>
+</div>
