@@ -68,7 +68,7 @@ Employee_Frontend
 
 ## Screenshots
 ### Home Page
-![Home Page](./Screenshot_2025-03-12_193357.png)
+![Home Page](./assets/Screenshot 2025-03-12 193357.png)
 
 ### Register Employee Page
 ![Register Employee](./Screenshot_2025-03-12_193508.png)
