@@ -74,10 +74,10 @@ Employee_Frontend
 <img src="assets/Screenshot 2025-03-12 193454.png" alt="">
 
 ### Employee List Page
-<img src="assets/Screenshot 2025-03-12 193508" alt="">
+<img src="assets/Screenshot 2025-03-12 193508.png" alt="">
 
 ### Search Employee by ID
-<img src="assets/Screenshot 2025-03-12 193546" alt="">
+<img src="assets/Screenshot 2025-03-12 193546.png" alt="">
 
 ## Installation and Setup
 ### Backend Setup
