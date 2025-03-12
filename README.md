@@ -68,16 +68,16 @@ Employee_Frontend
 
 ## Screenshots
 ### Home Page
-![Home Page](./assets/Screenshot 2025-03-12 193357.png)
+<img src="assets/Screenshot 2025-03-12 193357.png" alt="">
 
 ### Register Employee Page
-![Register Employee](./Screenshot_2025-03-12_193508.png)
+<img src="assets/Screenshot 2025-03-12 193454.png" alt="">
 
 ### Employee List Page
-![Employee List](./Screenshot_2025-03-12_193546.png)
+<img src="assets/Screenshot 2025-03-12 193508" alt="">
 
 ### Search Employee by ID
-![Search Employee](./Screenshot_2025-03-12_193454.png)
+<img src="assets/Screenshot 2025-03-12 193546" alt="">
 
 ## Installation and Setup
 ### Backend Setup
